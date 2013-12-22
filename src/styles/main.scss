@@ -1,0 +1,51 @@
+$font-stack:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-mono:"Lucida Console", Monaco, monospace;
+$bgcolor1: #fff;
+$bgcolor2: #fcfcfc;
+$color1: #444;
+$color2: #563d7c;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+body {
+  font: 14px $font-stack;
+  color: $color1;
+  background-color: $bgcolor1;
+}
+
+header {
+	border-bottom: 1px solid $color1;
+	h1 {padding-left: 20px;color:$color2}
+}
+
+section {
+	padding: 20px 10px;
+	margin: 0px;
+	width:100%;
+	background-color:$color2;
+	.container {
+		padding:20px;
+		background-color:$bgcolor2;
+		@include border-radius(10px);
+	}
+	code {
+		font: 10px $font-mono;
+	}
+}
+
+hr {
+	padding:0px;
+	margin:0px;
+}
+
+footer {
+	padding:20px;
+	p {text-align:center;}
+}

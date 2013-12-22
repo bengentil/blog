@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "authors": [
+    "Benjamin Gentil"
+  ],
+  "license": "MIT",
+  "homepage": "bgentil.fr",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.0.2"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/*.js",
+      "css": "dist/css/*.css",
+      "fonts": "dist/fonts/*"
+    },
+    "jquery": {
+      "js": "*.js"
+    }
+  }
+}
